@@ -8,12 +8,25 @@ namespace Tasks
 {
     abstract class Figure
     {
+        readonly int x;
+        readonly int y;
+
+
+        public Figure(int x, int y)
+        {
+            this.x = x;
+            this.y = y;
+        }
+
         public abstract void Draw();
         
     }
 
     class Square : Figure
     {
+        public Square(int x, int y)
+           : base(x, y) { }
+
         public override void Draw()
         {
             Console.WriteLine("Square");
@@ -21,6 +34,9 @@ namespace Tasks
     }
     class Rectangles : Figure
     {
+        public Rectangles(int x, int y)
+            : base(x, y) { }
+
         public override void Draw()
         {
             Console.WriteLine("Rectangle");
