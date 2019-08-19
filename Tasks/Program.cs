@@ -86,8 +86,21 @@ namespace Tasks
 
 
             //завдання 2.1 реалізоване в Figure.cs або 2ed2084c0548f8a027487d6a3f55448c089b0057
-
-
+            //завдання 2.2 реалізоване в Figure.cs або 42bc32f2f8257565e1fa378902b08bc6cb7b7b2e
+            
+            Tasks.Rectangles RR = new Tasks.Rectangles(1, 2);
+            RR.Draw();
+            Tasks.Square SS = new Tasks.Square(1, 2);
+            SS.Draw();
+        
+              // завдання 2.3. реалізоване в Figure1.cs або            
+                            
+             Tasks.CFigure F = new Tasks.CFigure(1, 2);
+             F.Draw();
+             Tasks.CRectangles R3 = new Tasks.CRectangles(1, 2);
+             R3.Draw();
+             Tasks.CSquare S3 = new Tasks.CSquare(1, 2);
+             S3.Draw();
 
         }
     }
