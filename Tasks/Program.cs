@@ -87,21 +87,34 @@ namespace Tasks
 
             //завдання 2.1 реалізоване в Figure.cs або 2ed2084c0548f8a027487d6a3f55448c089b0057
             //завдання 2.2 реалізоване в Figure.cs або 42bc32f2f8257565e1fa378902b08bc6cb7b7b2e
-            
+            Console.WriteLine("ЗAВДАННЯ 2.1,2.2");
+
             Tasks.Rectangles RR = new Tasks.Rectangles(1, 2);
             RR.Draw();
             Tasks.Square SS = new Tasks.Square(1, 2);
             SS.Draw();
-        
-              // завдання 2.3. реалізоване в Figure1.cs або            
-                            
-             Tasks.CFigure F = new Tasks.CFigure(1, 2);
+
+            // завдання 2.3. реалізоване в CFigure.cs або  a549b7569dd0586926e59cd1759ab1faacdbb75f          
+            Console.WriteLine("ЗAВДАННЯ 2.3");
+            Tasks.CFigure F = new Tasks.CFigure(1, 2);
              F.Draw();
              Tasks.CRectangles R3 = new Tasks.CRectangles(1, 2);
              R3.Draw();
              Tasks.CSquare S3 = new Tasks.CSquare(1, 2);
              S3.Draw();
+            //завдання 2.4. реалізоване в NFigure.cs
+            Tasks.IDrawable[] ID = new Tasks.IDrawable[3];
+            ID[0] = new Tasks.NFigure(1, 2);
+            ID[1] = new Tasks.NRectangles(1, 2);
+            ID[2] = new Tasks.NSquare(1, 2);
+            DrawAll(ID);
 
+
+        }
+        public static void DrawAll(Tasks.IDrawable[] array)
+        {
+            for (int i = 0; i < array.Length; i++)
+                array[i].Draw();
         }
     }
 }
