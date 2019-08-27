@@ -113,10 +113,18 @@ namespace Tasks
             Console.WriteLine("ЗAВДАННЯ 3.1: ");
             Task3_Person myPerson3_1 = new Task3_Person();
             Console.WriteLine(myPerson3_1.PersonNameAndAge());
-            Console.ReadLine();
+           
             //завданння 3.2.Вивести список персон(імя,вік)
+            Console.WriteLine("ЗAВДАННЯ 3.2: ");
+            myPerson3_1.AddTwoList();
+            Console.WriteLine(myPerson3_1.PersonPhoneNumber());
+
+
             //завданння 3.3.Вивести список персон(імя,вік)
-        }
+
+
+
+            Console.ReadLine();}
         public static void DrawAll(Tasks.IDrawable[] array)
         {
             for (int i = 0; i < array.Length; i++)
