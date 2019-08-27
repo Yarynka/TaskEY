@@ -121,14 +121,25 @@ namespace Tasks
 
 
             //завданння 3.3.Вивести список персон(імя,вік)
-
+            int N = 100;
+            int n = 4;
+            Task_3_3_Person tPerson = new Task_3_3_Person(N, n);
+            Console.WriteLine("До :" + N + ";\nПiсля: " + tPerson.Clean() + ";");
+            
+            while (true)
+            {
+                Console.WriteLine("Сторiнка: ");
+                int pageNumber = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine(tPerson.DisplayPage(pageNumber));
+            }
 
 
             Console.ReadLine();}
+        /*
         public static void DrawAll(Tasks.IDrawable[] array)
         {
             for (int i = 0; i < array.Length; i++)
                 array[i].Draw();
-        }
+        }*/
     }
 }

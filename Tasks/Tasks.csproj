@@ -54,6 +54,7 @@
     <Compile Include="Rectangle.cs" />
     <Compile Include="RectangleAuto.cs" />
     <Compile Include="RectangleStatic.cs" />
+    <Compile Include="Task3_3_Person.cs" />
     <Compile Include="Task3_Person.cs" />
   </ItemGroup>
   <ItemGroup>
